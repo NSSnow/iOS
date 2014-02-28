@@ -20,6 +20,8 @@
 		770676F618BFD8A200374D43 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 770676F418BFD8A200374D43 /* InfoPlist.strings */; };
 		770676F818BFD8A200374D43 /* NSSnowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 770676F718BFD8A200374D43 /* NSSnowTests.m */; };
 		77BF249618BFEF0000315F74 /* SNOWAttendee.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BF249518BFEF0000315F74 /* SNOWAttendee.m */; };
+		77BF249918C07BF200315F74 /* SNOWAttendeeListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BF249818C07BF200315F74 /* SNOWAttendeeListViewController.m */; };
+		77BF249C18C07E7100315F74 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 77BF249B18C07E7100315F74 /* Localizable.strings */; };
 		77F19B3E18BFEC4C0020EC19 /* SNOWEventTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F19B3D18BFEC4C0020EC19 /* SNOWEventTests.m */; };
 		77F19B4218BFEC5B0020EC19 /* SNOWEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F19B4118BFEC5B0020EC19 /* SNOWEvent.m */; };
 		77F19B4518BFEC960020EC19 /* SNOWAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F19B4418BFEC960020EC19 /* SNOWAPIClient.m */; };
@@ -58,6 +60,9 @@
 		770676F718BFD8A200374D43 /* NSSnowTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSSnowTests.m; sourceTree = "<group>"; };
 		77BF249418BFEF0000315F74 /* SNOWAttendee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNOWAttendee.h; sourceTree = "<group>"; };
 		77BF249518BFEF0000315F74 /* SNOWAttendee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNOWAttendee.m; sourceTree = "<group>"; };
+		77BF249718C07BF200315F74 /* SNOWAttendeeListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SNOWAttendeeListViewController.h; path = Controller/SNOWAttendeeListViewController.h; sourceTree = "<group>"; };
+		77BF249818C07BF200315F74 /* SNOWAttendeeListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SNOWAttendeeListViewController.m; path = Controller/SNOWAttendeeListViewController.m; sourceTree = "<group>"; };
+		77BF249B18C07E7100315F74 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		77F19B3D18BFEC4C0020EC19 /* SNOWEventTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNOWEventTests.m; sourceTree = "<group>"; };
 		77F19B4018BFEC5B0020EC19 /* SNOWEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNOWEvent.h; sourceTree = "<group>"; };
 		77F19B4118BFEC5B0020EC19 /* SNOWEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNOWEvent.m; sourceTree = "<group>"; };
@@ -135,6 +140,7 @@
 				770676E118BFD8A200374D43 /* SNOWAppDelegate.h */,
 				770676E218BFD8A200374D43 /* SNOWAppDelegate.m */,
 				77F19B3F18BFEC5B0020EC19 /* Model */,
+				77BF249A18C07BF400315F74 /* Controller */,
 				770676E418BFD8A200374D43 /* Images.xcassets */,
 				770676D918BFD8A200374D43 /* Supporting Files */,
 			);
@@ -144,6 +150,7 @@
 		770676D918BFD8A200374D43 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				77BF249B18C07E7100315F74 /* Localizable.strings */,
 				770676DA18BFD8A200374D43 /* NSSnow-Info.plist */,
 				770676DB18BFD8A200374D43 /* InfoPlist.strings */,
 				770676DE18BFD8A200374D43 /* main.m */,
@@ -169,6 +176,15 @@
 				770676F418BFD8A200374D43 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		77BF249A18C07BF400315F74 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				77BF249718C07BF200315F74 /* SNOWAttendeeListViewController.h */,
+				77BF249818C07BF200315F74 /* SNOWAttendeeListViewController.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 		77F19B3C18BFEC4C0020EC19 /* Models */ = {
@@ -271,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				770676DD18BFD8A200374D43 /* InfoPlist.strings in Resources */,
+				77BF249C18C07E7100315F74 /* Localizable.strings in Resources */,
 				770676E518BFD8A200374D43 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -355,6 +372,7 @@
 			files = (
 				77BF249618BFEF0000315F74 /* SNOWAttendee.m in Sources */,
 				770676DF18BFD8A200374D43 /* main.m in Sources */,
+				77BF249918C07BF200315F74 /* SNOWAttendeeListViewController.m in Sources */,
 				770676E318BFD8A200374D43 /* SNOWAppDelegate.m in Sources */,
 				77F19B4518BFEC960020EC19 /* SNOWAPIClient.m in Sources */,
 				77F19B4218BFEC5B0020EC19 /* SNOWEvent.m in Sources */,

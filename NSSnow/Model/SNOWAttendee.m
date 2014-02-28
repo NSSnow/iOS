@@ -17,7 +17,12 @@
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
     return @{
         NSStringFromSelector(@selector(name)): @"name",
+        NSStringFromSelector(@selector(avatarURL)): @"avatar_url",
     };
+}
+
++ (NSValueTransformer *)avatarURLJSONTransformer {
+    return [NSValueTransformer valueTransformerForName:MTLURLValueTransformerName];
 }
 
 @end

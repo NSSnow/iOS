@@ -43,8 +43,8 @@
     return [NSValueTransformer valueTransformerForName:MTLURLValueTransformerName];
 }
 
-+ (NSValueTransformer *)attendeeJSONTransformer {
-    return [NSValueTransformer mtl_JSONDictionaryTransformerWithModelClass:SNOWAttendee.class];
++ (NSValueTransformer *)attendeesJSONTransformer {
+    return [NSValueTransformer mtl_JSONArrayTransformerWithModelClass:SNOWAttendee.class];
 }
 
 @end

@@ -11,5 +11,6 @@
 @interface SNOWAttendee : MTLModel
 
 @property (nonatomic, strong, readonly) NSString *name;
+@property (nonatomic, strong, readonly) NSURL *avatarURL;
 
 @end
