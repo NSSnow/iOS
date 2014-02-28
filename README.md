@@ -1,7 +1,7 @@
 NSSnow iOS Application
 ======================
 
-[![Build Status](https://travis-ci.org/NSSnow/NSSnow.png?branch=master)](https://travis-ci.org/NSSnow/iOS)
+[![Build Status](https://travis-ci.org/NSSnow/iOS.png?branch=master)](https://travis-ci.org/NSSnow/iOS)
 
 ## License
 
